@@ -47,6 +47,7 @@
 
 
 </style>
+<link href="https://fonts.googleapis.com/css?family=Noto+Serif+TC" rel="stylesheet">
 <head>
 </head>
 <body>
@@ -212,11 +213,12 @@ function out(ev) {
 
 var label = chart.createChild(am4core.Label);
 label.text = "Intérêt sur le sujet du Zéro Déchet (d'après Google Trend)";
-label.fontSize = 15;
-label.align = "center";
+label.fontFamily = 'Noto Serif TC';
+label.fontSize = 13;
+//label.align = "center";
 //label.isMeasured = false;
 label.horizontalCenter = "middle";
-label.x = 100;
+label.x = 250;
 label.y = 455;
 
 
@@ -444,10 +446,10 @@ function out(ev) {
 
 var label = chart.createChild(am4core.Label);
 label.text = "Masse de déchets produits par personne par année";
-label.fontSize = 15;
-label.align = "center";
-//label.isMeasured = false;
-label.horizontalCenter = "middle";
+label.fontFamily = 'Noto Serif TC';
+label.fontSize = 13;
+//label.align = "center";
+//label.horizontalCenter = "middle";
 label.x = 100;
 label.y = 455;
 
