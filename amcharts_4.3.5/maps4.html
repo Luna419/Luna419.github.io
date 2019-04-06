@@ -27,9 +27,9 @@
 
 #legend_maps {
   width: 20%;
-  border-width: 0 1px 0 1px;
+  /*border-width: 0 1px 0 1px;
   border-style: solid;
-  border-color: #52BD97;
+  border-color: #52BD97;*/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -140,45 +140,54 @@ function createSeries(info_name, name, include, color, hoverColor) {
   return series;
 }
 
-//createSeries("Northern Europe", ["FI", "DK", "SE", "NO", "LT", "LV", "EE", "IS"], "#96BDC6", "#669DA6");
-createSeries("Allemagne", "346001167 tonnes", ["DE"], "#FF4159", "#F58795");
-createSeries("France", "283391472 tonnes", ["FR"], "#FFA580", "#F9D0BF");
-createSeries("Bulgarie", "195064838 tonnes", ["BG"], "#E5DB8D", "#F1EBC1");
-createSeries("Espagne", "136220011 tonnes", ["ES"], "#E5DB8D", "#F1EBC1");
-createSeries("Italie", "102352518 tonnes", ["IT"], "#E5DB8D", "#F1EBC1");
-createSeries("Pologne", "128581819 tonnes", ["PL"], "#E5DB8D", "#F1EBC1");
-createSeries("Suède", "87181191 tonnes", ["SE"], "#E5DB8D", "#F1EBC1");
-createSeries("Finlande", "67015648 tonnes", ["FI"], "#E5DB8D", "#F1EBC1");
-createSeries("Portugal", "23945324 tonnes", ["PT"], "#E5DB8D", "#F1EBC1");
-createSeries("Autriche", "51627556 tonnes", ["AT"], "#E5DB8D", "#F1EBC1");
-createSeries("Pays-Bas", "85826150 tonnes", ["NL"], "#E5DB8D", "#F1EBC1");
-createSeries("Grèce", "25499043 tonnes", ["GR"], "#E5DB8D", "#F1EBC1");
-createSeries("République tchèque tonnes", "22521031", ["CZ"], "#E5DB8D", "#F1EBC1");
-createSeries("Belgique", "32985766 tonnes", ["BE"], "#E5DB8D", "#F1EBC1");
-createSeries("Danemark", "12892738 tonnes", ["DK"], "#A5CB97", "#D8F3CE");
-createSeries("Estonie", "346001167 tonnes", ["EE"], "#A5CB97", "#D8F3CE");
-createSeries("Irlande", "18227850 tonnes", ["IE"], "#A5CB97", "#D8F3CE");
-createSeries("Luxembourg", "10217449 tonnes", ["LU"], "#A5CB97", "#D8F3CE");
-createSeries("Hongrie", "9826086 tonnes", ["HU"], "#A5CB97", "#D8F3CE");
-createSeries("Slovaquie", "12104130 tonnes", ["SK"], "#A5CB97", "#D8F3CE");
-createSeries("Norvège", "6501333 tonnes", ["NO"], "#A5CB97", "#D8F3CE");
-createSeries("Croatie", "4756565 tonnes", ["HR"], "#52BD97", "#A1ECD1");
-createSeries("Chypre", "1182660 tonnes", ["CY"], "#52BD97", "#A1ECD1");
-createSeries("Lettonie", "988139 tonnes", ["LV"], "#52BD97", "#A1ECD1");
-createSeries("Lituanie", "4579718 tonnes", ["LT"], "#52BD97", "#A1ECD1");
-createSeries("Malte", "3097939 tonnes", ["MT"], "#52BD97", "#A1ECD1");
-createSeries("Slovénie", "4990764 tonnes", ["SI"], "#52BD97", "#A1ECD1");
-createSeries("Islande", "488700 tonnes", ["IS"], "#52BD97", "#A1ECD1");
+// première couleur "#FF4159", "#F58795"
+createSeries("Royaume-Uni", "51,59% des recherches", ["GB"], "#FF4159", "#F58795");
+createSeries("Allemagne", "44,96% des recherches", ["DE"], "#FF4159", "#F58795");
+
+// deuxième couleur "#FFA580", "#F9D0BF"
+createSeries("Espagne", "39,05% des recherches", ["ES"], "#FFA580", "#F9D0BF");
+createSeries("Italie", "28,92% des recherches", ["IT"], "#FFA580", "#F9D0BF");
+createSeries("Autriche", "36,92% des recherches", ["AT"], "#FFA580", "#F9D0BF");
+createSeries("Pays-Bas", "29,73% des recherches", ["NL"], "#FFA580", "#F9D0BF");
+createSeries("Finlande", "34,75% des recherches", ["FI"], "#FFA580", "#F9D0BF");
+createSeries("Norvège", "29,5% des recherches", ["NO"], "#FFA580", "#F9D0BF");
+createSeries("Danemark", "25,11% des recherches", ["DK"], "#E5DB8D", "#F1EBC1");
+
+// troisième couleur "#E5DB8D", "#F1EBC1"
+createSeries("Suède", "24,63% des recherches", ["SE"], "#E5DB8D", "#F1EBC1");
+createSeries("Roumanie", "21,19% des recherches", ["RO"], "#E5DB8D", "#F1EBC1");
+createSeries("Pologne", "23,32% des recherches", ["PL"], "#E5DB8D", "#F1EBC1");
+createSeries("France", "21,53% des recherches", ["FR"], "#E5DB8D", "#F1EBC1");
+createSeries("Irlande", "22,21% des recherches", ["IE"], "#E5DB8D", "#F1EBC1");
+
+// quatrième couleur "#A5CB97", "#D8F3CE"
+createSeries("République tchèque", "17,88% des recherches", ["CZ"], "#A5CB97", "#D8F3CE");
+createSeries("Grèce", "18,11% des recherches", ["GR"], "#A5CB97", "#D8F3CE");
+createSeries("Portugal", "17,40% des recherches", ["PT"], "#A5CB97", "#D8F3CE");
+createSeries("Slovénie", "13,82% des recherches", ["SI"], "#A5CB97", "#D8F3CE");
+createSeries("Slovaquie", "13,51% des recherches", ["SK"], "#A5CB97", "#D8F3CE");
+createSeries("Croatie", "11,82% des recherches", ["HR"], "#A5CB97", "#D8F3CE");
+createSeries("Luxembourg", "10,53% des recherches", ["LU"], "#A5CB97", "#D8F3CE");
+createSeries("Estonie", "10,13% des recherches", ["EE"], "#A5CB97", "#D8F3CE");
+createSeries("Belgique", "13,38% des recherches", ["BE"], "#A5CB97", "#D8F3CE");
+
+// cinquième couleur "#52BD97", "#A1ECD1"
+createSeries("Hongrie", "9,67% des recherches", ["HU"], "#52BD97", "#A1ECD1");
+createSeries("Lettonie", "8,36% des recherches", ["LV"], "#52BD97", "#A1ECD1");
+createSeries("Lituanie", "8,19% des recherches", ["LT"], "#52BD97", "#A1ECD1");
+createSeries("Bulgarie", "10,48% des recherches", ["BG"], "#52BD97", "#A1ECD1");
+
 //Unknown information
+createSeries("Chypre", "Pas d'information", ["CY"], "#D3D0D0", "#D3D0D0");
+createSeries("Malte", "Pas d'information", ["MT"], "#D3D0D0", "#D3D0D0");
+createSeries("Islande", "Pas d'information", ["IS"], "#D3D0D0", "#D3D0D0");
 createSeries("Serbie", "Pas d'information", ["RS"], "#D3D0D0", "#D3D0D0");
 createSeries("Bosnie", "Pas d'information", ["BA"], "#D3D0D0", "#D3D0D0");
-createSeries("Roumanie", "Pas d'information", ["RO"], "#D3D0D0", "#D3D0D0");
 createSeries("Macédoine", "Pas d'information", ["MK"], "#D3D0D0", "#D3D0D0");
 createSeries("Ukraine", "Pas d'information", ["UA"], "#D3D0D0", "#D3D0D0");
 createSeries("Biélorussie", "Pas d'information", ["BY"], "#D3D0D0", "#D3D0D0");
 createSeries("Moldavie", "Pas d'information", ["MD"], "#D3D0D0", "#D3D0D0");
 createSeries("Suisse", "Pas d'information", ["CH"], "#D3D0D0", "#D3D0D0");
-createSeries("Royaume-Uni", "Pas d'information", ["GB"], "#D3D0D0", "#D3D0D0");
 createSeries("Turquie", "Pas d'information", ["TR"], "#D3D0D0", "#D3D0D0");
 createSeries("Kosovo", "Pas d'information", ["XK"], "#D3D0D0", "#D3D0D0");
 createSeries("Albanie", "Pas d'information", ["AL"], "#D3D0D0", "#D3D0D0");
@@ -201,6 +210,14 @@ function out(ev) {
 }
 
 
+var label = chart.createChild(am4core.Label);
+label.text = "Intérêt sur le sujet du Zéro Déchet (d'après Google Trend)";
+label.fontSize = 15;
+label.align = "center";
+//label.isMeasured = false;
+label.horizontalCenter = "middle";
+label.x = 100;
+label.y = 455;
 
 
 
@@ -425,7 +442,14 @@ function out(ev) {
 }
 
 
-
+var label = chart.createChild(am4core.Label);
+label.text = "Masse de déchets produits par personne par année";
+label.fontSize = 15;
+label.align = "center";
+//label.isMeasured = false;
+label.horizontalCenter = "middle";
+label.x = 100;
+label.y = 455;
 
 
 // This array will be populated with country IDs to exclude from the world series
